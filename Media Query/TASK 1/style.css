@@ -1,0 +1,42 @@
+       *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(165, 153, 153);
+        }
+        .header{
+            width: 100%;
+            height: 20%;
+            background-color: #ccc;
+            font-size: xx-large;
+            font-weight: bold;
+            text-align: center;
+        }
+        .main{
+            width: 100%;
+            background-color: rgb(255, 218, 169);
+            
+        }
+        .footer{
+            height: fit-content;
+            width: fit-content;
+            background-color: yellow;
+
+        }
+        .parent{
+            width: 100vw;
+            height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        /* Applying media query on the header. */
+        @media (max-width:600px){
+            .header{
+                background-color: blue;
+            }
+        }
+        
+    

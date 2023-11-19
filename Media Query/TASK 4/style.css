@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+    padding: 20px;
+}
+.box{
+    height:20vh;
+    text-align: center;
+    padding-top: 20px;
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+}
+.box4{
+    background-color: orange;
+}
+/* adding media query to achieve the requuired configuration for screen size smaller than 490px according to question. */
+@media (max-width:490px){
+    .container{
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(4, 1fr);
+        row-gap:20px;
+    }
+}

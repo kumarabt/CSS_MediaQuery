@@ -1,0 +1,20 @@
+        .navbar{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            grid-template-rows: 50px;
+            place-items: center;
+            background-color: black;
+        }
+        .child{
+            text-decoration: none;
+            color: white;
+            text-align: center;
+        }
+        @media (max-width: 768px){
+            .navbar{
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(5, 1fr);
+                background-color: gray;
+                row-gap: 30px;
+            }
+        }
